@@ -70,7 +70,7 @@ export function TreatmentCrossroads() {
   }
 
   return (
-    <section id="treatment" className="w-full bg-background py-16 sm:py-20" aria-labelledby="treatment-heading">
+    <section id="treatment" className="w-full bg-background py-12 sm:py-20" aria-labelledby="treatment-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2
           id="treatment-heading"
@@ -90,44 +90,41 @@ export function TreatmentCrossroads() {
               <div key={treatment.id} className="flex flex-col">
                 <button
                   onClick={() => toggleTreatment(treatment.id)}
-                  className={`group relative flex flex-col items-center rounded-2xl border-2 p-6 text-center transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50 sm:p-8 ${
-                    isExpanded
+                  className={`group relative flex flex-col items-center rounded-2xl border-2 p-6 text-center transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50 sm:p-8 ${isExpanded
                       ? "border-accent bg-accent/10 shadow-lg"
                       : "border-border bg-card hover:border-primary hover:shadow-md"
-                  }`}
+                    }`}
                   aria-expanded={isExpanded}
                   aria-controls={`treatment-content-${treatment.id}`}
                 >
                   <div
-                    className={`flex h-16 w-16 items-center justify-center rounded-2xl transition-colors sm:h-20 sm:w-20 ${
-                      isExpanded
+                    className={`flex h-16 w-16 items-center justify-center rounded-2xl transition-colors sm:h-20 sm:w-20 ${isExpanded
                         ? "bg-accent text-accent-foreground"
                         : "bg-secondary text-muted-foreground group-hover:bg-primary/15 group-hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     <treatment.icon className="h-8 w-8 sm:h-10 sm:w-10" strokeWidth={1.5} />
                   </div>
-                  
+
                   <h3 className="mt-4 text-xl font-bold text-foreground sm:text-2xl">
                     {treatment.title}
                   </h3>
-                  
+
                   {treatment.subtitle && (
                     <span className="mt-1 text-sm text-muted-foreground">
                       ({treatment.subtitle})
                     </span>
                   )}
-                  
+
                   <p className="mt-3 text-base text-muted-foreground">
                     {treatment.description}
                   </p>
-                  
+
                   <div className="mt-4 flex items-center gap-2 text-sm font-medium text-accent">
                     <span>{isExpanded ? "Skrýt detaily" : "Zobrazit detaily"}</span>
-                    <ChevronDown 
-                      className={`h-5 w-5 transition-transform duration-300 ${
-                        isExpanded ? "rotate-180" : ""
-                      }`}
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${isExpanded ? "rotate-180" : ""
+                        }`}
                       aria-hidden="true"
                     />
                   </div>
@@ -140,7 +137,7 @@ export function TreatmentCrossroads() {
         {/* Expanded Content */}
         {expandedTreatment !== null && (
           <div className="mt-8">
-            <Card 
+            <Card
               id={`treatment-content-${expandedTreatment}`}
               className="animate-in fade-in slide-in-from-top-4 duration-300 border-2 border-border bg-card shadow-md"
             >
@@ -148,7 +145,7 @@ export function TreatmentCrossroads() {
                 {(() => {
                   const treatment = treatments.find(t => t.id === expandedTreatment)
                   if (!treatment) return null
-                  
+
                   return (
                     <div className="grid gap-6 lg:grid-cols-3">
                       {/* How it works */}
