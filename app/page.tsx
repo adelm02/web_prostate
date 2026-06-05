@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { TimelineSection } from "@/components/timeline-section"
+import { TreatmentCrossroads } from "@/components/treatment-crossroads"
 import { GlossarySection } from "@/components/glossary-section"
 import { MythsSection } from "@/components/myths-section"
 import { HelpBanner } from "@/components/help-banner"
@@ -14,7 +14,7 @@ export default function Page() {
       
       <main className="flex-1">
         <HeroSection />
-        <TimelineSection />
+        <TreatmentCrossroads />
         <GlossarySection />
         <MythsSection />
         <HelpBanner />

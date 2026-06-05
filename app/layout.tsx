@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'ALT-SHIFT-HEAL: Průvodce | Podpora při podezření na karcinom prostaty',
-  description: 'Ověřené informace a podpora pro muže čekající na diagnózu nebo léčebný plán karcinomu prostaty. Jsme v tom s vámi.',
+  title: 'ALT-SHIFT-HEAL: Průvodce | Podpora při karcinomu prostaty.',
+  description: 'Ověřené informace a podpora pro muže čekající na léčebný plán karcinomu prostaty. Jsme v tom s vámi.',
   generator: 'v0.app',
   icons: {
     icon: [
