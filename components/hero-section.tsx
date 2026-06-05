@@ -7,7 +7,7 @@ export function HeroSection() {
     <section id="hero" className="w-full bg-gradient-to-b from-card to-background py-16 sm:py-20 lg:py-28">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          Karcinom prostaty:
+          Průvodce pro karcinom prostaty.
           <br />
           <span className="text-accent">Co mě nyní čeká?</span>
         </h1>
