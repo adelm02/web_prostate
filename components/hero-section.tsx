@@ -9,7 +9,7 @@ export function HeroSection() {
         <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           Průvodce karcinomu prostaty.
           <br />
-          <span className="text-accent">Co mě nyní čeká? Jsme v  tom s Vámi.</span>
+          <span className="text-accent">Jsme v  tom s Vámi.</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl">
