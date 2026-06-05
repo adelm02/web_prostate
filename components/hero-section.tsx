@@ -1,17 +1,8 @@
-"use client"
-
 import Link from "next/link"
-import { LogIn, BookOpen } from "lucide-react"
+import { LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
-  const scrollToTreatment = () => {
-    const element = document.querySelector("#treatment")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section id="hero" className="w-full bg-gradient-to-b from-card to-background py-16 sm:py-20 lg:py-28">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
@@ -25,7 +16,7 @@ export function HeroSection() {
           Jste v péči onkologie. Jsme tu, abychom vás provedli dalšími kroky a možnostmi léčby.
         </p>
 
-        <div className="mt-12 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8">
+        <div className="mt-12 flex items-center justify-center">
           <Button
             asChild
             size="lg"
@@ -35,16 +26,6 @@ export function HeroSection() {
               <LogIn className="mr-3 h-7 w-7 shrink-0" />
               <span className="text-balance">Vstoupit do mé léčby</span>
             </Link>
-          </Button>
-
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={scrollToTreatment}
-            className="h-20 w-full max-w-sm rounded-2xl border-2 border-accent bg-accent/10 px-8 text-lg font-semibold text-foreground shadow-lg transition-all hover:bg-accent/20 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-ring sm:h-24 sm:text-xl"
-          >
-            <BookOpen className="mr-3 h-7 w-7 shrink-0 text-accent" />
-            <span className="text-balance">Průvodce onkologickou léčbou</span>
           </Button>
         </div>
       </div>
