@@ -70,7 +70,7 @@ export function TreatmentCrossroads() {
   }
 
   return (
-    <section id="treatment" className="w-full bg-background py-16 sm:py-20" aria-labelledby="treatment-heading">
+    <section id="treatment" className="w-full bg-background py-12 sm:py-16" aria-labelledby="treatment-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2
           id="treatment-heading"
