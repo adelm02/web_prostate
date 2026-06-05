@@ -76,10 +76,10 @@ export function TreatmentCrossroads() {
           id="treatment-heading"
           className="mb-4 text-center text-2xl font-bold text-foreground sm:text-3xl"
         >
-          Rozcestník léčby
+          Možnosti onkologické léčby
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-muted-foreground">
-          Klikněte na jednotlivé možnosti léčby a zjistěte, co obnáší
+          Vyberte si jednu z možností léčby a zjistěte více informací
         </p>
 
         {/* Treatment Cards Grid */}

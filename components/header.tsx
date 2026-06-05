@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const menuItems = [
   { label: "Úvod", href: "#hero", icon: Home },
-  { label: "Vaše cesta", href: "#timeline", icon: BookOpen },
+  { label: "Léčba", href: "#treatment", icon: BookOpen },
   { label: "Slovníček", href: "#glossary", icon: BookOpen },
   { label: "Mýty a fakta", href: "#myths", icon: HelpCircle },
   { label: "Pomoc", href: "#help", icon: Phone },

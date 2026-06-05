@@ -21,16 +21,16 @@ const glossaryItems = [
       "Karcinom prostaty je nejčastější zhoubný nádor u mužů v České republice. Většina případů je diagnostikována u mužů nad 65 let. Onemocnění se dělí do stadií podle rozsahu – od lokalizovaného (omezeno na prostatu) po pokročilé (rozšířeno do jiných částí těla). Stádium ovlivňuje volbu léčby. Moderní léčba dosahuje velmi dobrých výsledků, zejména při včasném záchytu.",
   },
   {
-    id: "gleason",
-    question: "Co znamená Gleasonovo skóre?",
+    id: "epidemiologie",
+    question: "Epidemiologie a stádia nemoci",
     answer:
-      "Gleasonovo skóre je systém, který patologové používají k popisu toho, jak agresivní může být rakovina prostaty. Skóre se pohybuje od 6 do 10. Nižší skóre (6) znamená méně agresivní nádor, který roste pomalu. Vyšší skóre (8-10) značí agresivnější formu. Gleasonovo skóre 7 je uprostřed a záleží na konkrétním složení. Toto číslo pomáhá vašemu lékaři naplánovat nejlepší léčbu právě pro vás.",
+      "Karcinom prostaty je celosvětově druhým nejčastějším nádorem u mužů. V České republice je diagnostikováno přibližně 7 000 nových případů ročně. Stádia onemocnění: Stadium I a II – nádor lokalizovaný v prostatě; Stadium III – nádor prorůstá přes pouzdro prostaty; Stadium IV – nádor se rozšířil do lymfatických uzlin nebo jiných orgánů. Čím dříve je nemoc zachycena, tím více možností léčby existuje.",
   },
   {
-    id: "stadia",
-    question: "Co znamenají stádia onemocnění?",
+    id: "projevy",
+    question: "Hlavní projevy a vyšetření",
     answer:
-      "Stádia karcinomu prostaty popisují rozsah onemocnění. Stadium I a II znamená, že nádor je lokalizovaný pouze v prostatě. Stadium III značí, že nádor prorůstá přes pouzdro prostaty. Stadium IV znamená, že se nádor rozšířil do lymfatických uzlin nebo jiných orgánů (metastázy). Čím nižší stadium, tím více možností léčby. I pokročilá stadia jsou dnes dobře léčitelná.",
+      "V časných stadiích karcinom prostaty často nezpůsobuje žádné příznaky. Později se mohou objevit problémy s močením (častější močení, slabý proud, potřeba vstávat v noci), krev v moči nebo bolesti v zádech. Základní vyšetření zahrnují: vyšetření PSA z krve, vyšetření per rectum (palpace prostaty), ultrazvuk a MRI prostaty. Diagnózu potvrzuje biopsie – odběr vzorku tkáně prostaty.",
   },
 ]
 
@@ -42,7 +42,7 @@ export function GlossarySection() {
           id="glossary-heading"
           className="mb-4 text-center text-2xl font-bold text-foreground sm:text-3xl"
         >
-          Vzdělávací sekce
+          Slovníček
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-center text-lg text-muted-foreground">
           Základní pojmy a informace o karcinomu prostaty srozumitelně
