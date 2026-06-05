@@ -74,7 +74,7 @@ export function TreatmentCrossroads() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2
           id="treatment-heading"
-          className="mb-2 text-center text-2xl font-bold text-foreground sm:text-3xl"
+          className="mb-4 text-center text-2xl font-bold text-foreground sm:text-3xl"
         >
           Možnosti onkologické léčby
         </h2>
