@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section id="hero" className="w-full bg-gradient-to-b from-card to-background py-16 sm:py-20 lg:py-28">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <h1 className="text-balance text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+        <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           Karcinom prostaty:
           <br />
           <span className="text-accent">Co mě nyní čeká?</span>
@@ -20,10 +20,10 @@ export function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="h-20 w-full max-w-sm rounded-2xl bg-primary px-8 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-ring sm:h-24 sm:text-xl"
+            className="h-16 w-full max-w-xs rounded-2xl bg-primary px-6 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:shadow-xl focus-visible:ring-4 focus-visible:ring-ring sm:h-18 sm:text-lg"
           >
             <Link href="/prihlaseni">
-              <LogIn className="mr-3 h-7 w-7 shrink-0" />
+              <LogIn className="mr-2 h-5 w-5 shrink-0" />
               <span className="text-balance">Vstoupit do mé léčby</span>
             </Link>
           </Button>
