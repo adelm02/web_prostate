@@ -12,19 +12,25 @@ const glossaryItems = [
     id: "psa",
     question: "Co je to PSA?",
     answer:
-      "PSA (prostatický specifický antigen) je bílkovina, kterou produkuje prostata. Zvýšená hladina v krvi může naznačovat různé problémy prostaty – nejen rakovinu, ale také nezhoubné zvětšení prostaty nebo zánět. Jeden zvýšený výsledek tedy neznamená automaticky rakovinu. Váš lékař bude sledovat změny hladiny PSA v čase a rozhodne o dalších vyšetřeních.",
+      "PSA (prostatický specifický antigen) je bílkovina, kterou produkuje prostata. Její hladina v krvi se používá ke sledování účinnosti léčby. Po zahájení léčby by měla hladina PSA klesat, což je dobrý znak. Pravidelné kontroly PSA jsou důležitou součástí sledování vašeho zdravotního stavu během i po léčbě.",
   },
   {
-    id: "biopsie",
-    question: "Jak probíhá biopsie?",
+    id: "karcinom",
+    question: "Základní informace o karcinomu prostaty",
     answer:
-      "Biopsie prostaty je krátký ambulantní výkon, který trvá přibližně 15-20 minut. Lékař pomocí tenké jehly a ultrazvuku odebere několik malých vzorků tkáně prostaty. Výkon se provádí v lokální anestezii, takže bolest je minimální – většina mužů popisuje pouze mírný tlak. Po výkonu můžete několik dní pozorovat krev v moči nebo spermatu, což je normální. Výsledky jsou obvykle k dispozici do 7-14 dnů.",
+      "Karcinom prostaty je nejčastější zhoubný nádor u mužů v České republice. Většina případů je diagnostikována u mužů nad 65 let. Onemocnění se dělí do stadií podle rozsahu – od lokalizovaného (omezeno na prostatu) po pokročilé (rozšířeno do jiných částí těla). Stádium ovlivňuje volbu léčby. Moderní léčba dosahuje velmi dobrých výsledků, zejména při včasném záchytu.",
   },
   {
     id: "gleason",
     question: "Co znamená Gleasonovo skóre?",
     answer:
       "Gleasonovo skóre je systém, který patologové používají k popisu toho, jak agresivní může být rakovina prostaty. Skóre se pohybuje od 6 do 10. Nižší skóre (6) znamená méně agresivní nádor, který roste pomalu. Vyšší skóre (8-10) značí agresivnější formu. Gleasonovo skóre 7 je uprostřed a záleží na konkrétním složení. Toto číslo pomáhá vašemu lékaři naplánovat nejlepší léčbu právě pro vás.",
+  },
+  {
+    id: "stadia",
+    question: "Co znamenají stádia onemocnění?",
+    answer:
+      "Stádia karcinomu prostaty popisují rozsah onemocnění. Stadium I a II znamená, že nádor je lokalizovaný pouze v prostatě. Stadium III značí, že nádor prorůstá přes pouzdro prostaty. Stadium IV znamená, že se nádor rozšířil do lymfatických uzlin nebo jiných orgánů (metastázy). Čím nižší stadium, tím více možností léčby. I pokročilá stadia jsou dnes dobře léčitelná.",
   },
 ]
 
@@ -36,10 +42,10 @@ export function GlossarySection() {
           id="glossary-heading"
           className="mb-4 text-center text-2xl font-bold text-foreground sm:text-3xl"
         >
-          Lékařský slovníček lidskou řečí
+          Vzdělávací sekce
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-center text-lg text-muted-foreground">
-          Vysvětlení základních pojmů, které uslyšíte od lékaře
+          Základní pojmy a informace o karcinomu prostaty srozumitelně
         </p>
 
         <Accordion type="single" collapsible className="space-y-4 pb-4">
