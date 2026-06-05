@@ -74,7 +74,7 @@ export function TreatmentCrossroads() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2
           id="treatment-heading"
-          className="mb-4 text-center text-2xl font-bold text-foreground sm:text-3xl"
+          className="mb-2 text-center text-2xl font-bold text-foreground sm:text-3xl"
         >
           Možnosti onkologické léčby
         </h2>
@@ -91,16 +91,16 @@ export function TreatmentCrossroads() {
                 <button
                   onClick={() => toggleTreatment(treatment.id)}
                   className={`group relative flex flex-col items-center rounded-2xl border-2 p-6 text-center transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50 sm:p-8 ${isExpanded
-                      ? "border-accent bg-accent/10 shadow-lg"
-                      : "border-border bg-card hover:border-primary hover:shadow-md"
+                    ? "border-accent bg-accent/10 shadow-lg"
+                    : "border-border bg-card hover:border-primary hover:shadow-md"
                     }`}
                   aria-expanded={isExpanded}
                   aria-controls={`treatment-content-${treatment.id}`}
                 >
                   <div
                     className={`flex h-16 w-16 items-center justify-center rounded-2xl transition-colors sm:h-20 sm:w-20 ${isExpanded
-                        ? "bg-accent text-accent-foreground"
-                        : "bg-secondary text-muted-foreground group-hover:bg-primary/15 group-hover:text-foreground"
+                      ? "bg-accent text-accent-foreground"
+                      : "bg-secondary text-muted-foreground group-hover:bg-primary/15 group-hover:text-foreground"
                       }`}
                   >
                     <treatment.icon className="h-8 w-8 sm:h-10 sm:w-10" strokeWidth={1.5} />
